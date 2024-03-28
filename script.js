@@ -301,27 +301,20 @@
 // // using IIFE function---------------------------------------------------------------------------
 
 (function() {
-    // Create an array
     const arr = [1, 2, 3, 4, 5];
   
-    // Rotate the array by k times
     const rotateArray = (arr, k) => {
       for (let i = 0; i < k; i++) {
-        // Remove the last element from the array
-        const lastElement = arr.pop();
+          const lastElement = arr.pop();
   
-        // Add the last element to the beginning of the array
-        arr.unshift(lastElement);
+          arr.unshift(lastElement);
       }
   
-      // Return the rotated array
       return arr;
     };
   
-    // Rotate the array by 2 times
     const rotatedArray = rotateArray(arr, 2);
   
-    // Print the rotated array
     console.log(rotatedArray); // [4, 5, 1, 2, 3]
   })();
 
